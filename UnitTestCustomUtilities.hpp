@@ -1,5 +1,3 @@
-// Unfit: Data fitting and optimization software
-//
 // Copyright (C) 2012- Dr Martin Buist & Dr Alberto Corrias
 // Contacts: martin.buist _at_ nus.edu.sg; alberto _at_ nus.edu.sg
 //
@@ -19,8 +17,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
-#ifndef UNFIT_UNITTESTS_UNITTESTCUSTOMUTILITIES_HPP_
-#define UNFIT_UNITTESTS_UNITTESTCUSTOMUTILITIES_HPP_
+#ifndef CBL_UNITTESTCUSTOMUTILITIES_HPP_
+#define CBL_UNITTESTCUSTOMUTILITIES_HPP_
 
 #include <algorithm>
 #include <string>
@@ -28,7 +26,7 @@
 #include "UnitTest++.h"
 #include "TestReporterStdout.h"
 
-namespace Unfit
+namespace CBL
 {
 /**
  * \brief Runs all the tests it finds in the project.
@@ -206,6 +204,6 @@ inline int RunMultipleSuites(std::vector<std::string> suite_names)
 }
 #undef COVERAGE_IGNORE
 
-}  // namespace Unfit
+}  // namespace CBL
 
 #endif
