@@ -26,7 +26,7 @@
 #include "UnitTest++.h"
 #include "TestReporterStdout.h"
 
-namespace CBL
+namespace UnitTest
 {
 /**
  * \brief Runs all the tests it finds in the project.
@@ -204,6 +204,6 @@ inline int RunMultipleSuites(std::vector<std::string> suite_names)
 }
 #undef COVERAGE_IGNORE
 
-}  // namespace CBL
+}  // namespace UnitTest
 
 #endif
