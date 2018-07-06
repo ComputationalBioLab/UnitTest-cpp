@@ -17,8 +17,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
-#ifndef CBL_UNITTESTCUSTOMUTILITIES_HPP_
-#define CBL_UNITTESTCUSTOMUTILITIES_HPP_
+#ifndef UNITTESTCUSTOMUTILITIES_HPP_
+#define UNITTESTCUSTOMUTILITIES_HPP_
 
 #include <algorithm>
 #include <string>
