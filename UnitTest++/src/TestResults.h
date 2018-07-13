@@ -9,7 +9,7 @@ class TestDetails;
 class TestResults
 {
 public:
-    explicit TestResults(TestReporter* reporter = 0);
+    explicit TestResults(TestReporter* reporter = nullptr);
 
     void OnTestStart(TestDetails const& test);
     void OnTestFailure(TestDetails const& test, char const* failure);

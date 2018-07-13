@@ -84,7 +84,7 @@ inline int RunOneTest(std::string TestName)
   UnitTest::TestReporterStdout reporter;
   UnitTest::TestRunner runner(reporter);
 
-  return runner.RunTestsIf(selectedTests, 0, UnitTest::True(), 0);
+  return runner.RunTestsIf(selectedTests, nullptr, UnitTest::True(), 0);
 }
 
 /**
@@ -120,7 +120,7 @@ inline int RunOneSuite(std::string SuiteName)
   UnitTest::TestReporterStdout reporter;
   UnitTest::TestRunner runner(reporter);
 
-  return runner.RunTestsIf(selectedTests, 0, UnitTest::True(), 0 );
+  return runner.RunTestsIf(selectedTests, nullptr, UnitTest::True(), 0 );
 }
 
 /**
@@ -161,7 +161,7 @@ inline int RunMultipleTests(std::vector<std::string> test_names)
   UnitTest::TestReporterStdout reporter;
   UnitTest::TestRunner runner(reporter);
 
-  return runner.RunTestsIf(selectedTests, 0, UnitTest::True(), 0);
+  return runner.RunTestsIf(selectedTests, nullptr, UnitTest::True(), 0);
 }
 
 /**
@@ -200,7 +200,7 @@ inline int RunMultipleSuites(std::vector<std::string> suite_names)
   UnitTest::TestReporterStdout reporter;
   UnitTest::TestRunner runner(reporter);
 
-  return runner.RunTestsIf(selectedTests, 0, UnitTest::True(), 0 );
+  return runner.RunTestsIf(selectedTests, nullptr, UnitTest::True(), 0 );
 }
 #undef COVERAGE_IGNORE
 

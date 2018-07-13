@@ -17,7 +17,7 @@ struct True
 {
 	bool operator()(const Test* const) const
 	{
-		return true;	
+		return true;
 	}
 };
 
@@ -28,12 +28,12 @@ public:
 	~TestRunner();
 
 	template <class Predicate>
-	int RunTestsIf(TestList const& list, char const* suiteName, 
+	int RunTestsIf(TestList const& list, char const* suiteName,
 				   const Predicate& predicate, int maxTestTimeInMs) const
 	{
 	    Test* curTest = list.GetHead();
 
-	    while (curTest != 0)
+	    while (curTest != nullptr)
 	    {
 		    if (IsTestInSuite(curTest,suiteName) && predicate(curTest))
 			{
@@ -44,7 +44,7 @@ public:
 	    }
 
 	    return Finish();
-	}	
+	}
 
 private:
 	TestReporter* m_reporter;
