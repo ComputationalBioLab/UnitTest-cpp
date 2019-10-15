@@ -1,0 +1,19 @@
+language: cpp
+
+matrix:
+  include:
+    - os: linux
+      dist: bionic
+      compiler: gcc
+      env: BUILD=Debug
+    - os: linux
+      dist: bionic
+      compiler: gcc
+      env: BUILD=Release
+
+script:
+  - mkdir -p build
+  - cd build
+  - cmake .. -DCMAKE_BUILD_TYPE=${BUILD}
+  - make
+  - ./TestUnitTest++
