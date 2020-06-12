@@ -1,4 +1,7 @@
-# UnitTest-cpp
+UnitTest-cpp <br>
+[![Build Status](https://travis-ci.org/liyier90/UnitTest-cpp.svg?branch=master)](https://travis-ci.org/liyier90/UnitTest-cpp)
+========
+
 The snapshot of UnitTest++ we use for our test environment
 
 # IMPORTANT NOTE:
